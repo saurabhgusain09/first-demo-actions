@@ -1,0 +1,19 @@
+name: my_first_action
+
+on: push
+
+jobs:
+    build:
+        runs-on: ubuntu-slim
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v6
+            - name: installing dependencies
+              uses: actions/setup-node@v6
+              with:
+                node-version: '22.22.3'
+            - name: install dependencies
+              run: npm install
+            - name: run tests cases
+              run: npm test
+            

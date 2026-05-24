@@ -1,0 +1,17 @@
+/node_modules 
+/package-lock.json
+/dist
+/coverage
+/.env 
+.DS_Store
+/logs
+*.log
+/tsconfig.tsbuildinfo
+/webpack-stats.json
+/.vscode
+/.idea
+/.eslintcache
+/.prettiercache
+/.nyc_output
+/.cache
+/.parcel-cache
