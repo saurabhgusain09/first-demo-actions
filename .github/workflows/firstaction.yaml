@@ -1,6 +1,6 @@
 name: my_first_action
 
-on: push
+on: ['push','workflow_dispatch']
 
 jobs:
     test:
