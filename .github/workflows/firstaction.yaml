@@ -1,8 +1,10 @@
 name: my_first_action
 
-on: 
-  pull_request:
-    types: [opened, closed]
+on:
+  push:
+    branches: main
+    paths:
+      - '*.js'
 
 jobs:
     test:
