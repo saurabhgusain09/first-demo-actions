@@ -1,6 +1,8 @@
 name: my_first_action
 
-on: ['push','workflow_dispatch']
+on: 
+  pull_request:
+    types: [opened, closed]
 
 jobs:
     test:
